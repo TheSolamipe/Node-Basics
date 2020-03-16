@@ -1,0 +1,33 @@
+<!Doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" content="">
+    <style media="screen">
+      body{ background: lightgreen; font-family: verdana; color: black; padding: 30px;}
+      h1{ font-size: 48px; text-transform: uppercase; letter-spacing: 2px; text-align: center;}
+      h2{ font-size: 40px; text-transform: uppercase; letter-spacing: 2px; text-align: center;}
+      h3{text-align: center; font-size: 36px;}
+      h4{text-align: center; font-size: 24px;}
+      ul{list-style: none;}
+      p, li{ font-size: 18px; text-align: center;}
+    </style>
+  </head>
+  <body>
+    <div class="">
+      
+      <h1>What's going on guys im Sholly Cobalt,im back here programming </h1>
+      <h3>Now we are using ejs to render a page to the client side</h3>
+      <h3>this is a message to <%= person %></h3>
+      <h4>thought you said you weren't watching! how come you knew i was updated</h4>
+      <p>Age: <strong><%= data.age%></strong></p>
+      <p>Profession: <strong><%= data.job%></strong></p>
+      <h2>Hobbies:</h2>
+      <ul>
+        <% data.hobbies.forEach(function(item){ %>
+            <li><%= item %></li>
+        <% });%>
+      </ul>
+    </div>
+  </body>
+
+</html>
